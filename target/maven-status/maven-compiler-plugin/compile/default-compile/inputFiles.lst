@@ -1,2 +1,4 @@
-/Users/alrocha003/Dev/Java/forum.api/src/main/java/br/com/forum/api/forum/api/controllers/PostsControllers.java
-/Users/alrocha003/Dev/Java/forum.api/src/main/java/br/com/forum/api/forum/api/Application.java
+/Users/alrocha003/Downloads/com.forum.app.api/src/main/java/com/forum/app/api/com/forum/app/api/controllers/PostController.java
+/Users/alrocha003/Downloads/com.forum.app.api/src/main/java/com/forum/app/api/com/forum/app/api/Application.java
+/Users/alrocha003/Downloads/com.forum.app.api/src/main/java/com/forum/app/api/com/forum/app/api/models/Post.java
+/Users/alrocha003/Downloads/com.forum.app.api/src/main/java/com/forum/app/api/com/forum/app/api/repository/PostRepository.java
