@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PostRepository  extends JpaRepository<Post, String> {
 
-    @Query("select * from post where name = :name")
-    public Post FindByName(@Param("name") String name);
+    //@Query(value = "select id, title from post where name = :name")
+    //Post FindByName(@Param("name") String name);
 }
