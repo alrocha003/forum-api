@@ -1,4 +1,4 @@
+com/forum/app/api/com/forum/app/api/models/Post.class
 com/forum/app/api/com/forum/app/api/controllers/PostController.class
 com/forum/app/api/com/forum/app/api/Application.class
 com/forum/app/api/com/forum/app/api/repository/PostRepository.class
-com/forum/app/api/com/forum/app/api/models/Post.class

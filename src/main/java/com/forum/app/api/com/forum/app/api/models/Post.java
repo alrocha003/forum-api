@@ -6,6 +6,12 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+/**
+ * Objeto de Modelo de Post utilizado pelo repositório e aplicação
+ *
+ * @author Alex Rocha
+ * @version 1.0
+ */
 @Entity
 public class Post {
     @Id

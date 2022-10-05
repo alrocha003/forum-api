@@ -6,6 +6,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/**
+ * Objeto de Modelo de Usuário utilizado pelo repositório e aplicação
+ *
+ * @author Alex Rocha
+ * @version 1.0
+ */
 @Entity(name = "tb_user")
 public class User {
     @Id
@@ -24,23 +30,23 @@ public class User {
     @NotNull
     private int _age;
 
-    public String getId(){
+    public String getId() {
         return this.Id;
     }
 
-    public String getName(){
+    public String getName() {
         return this._name;
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return this._email;
     }
 
-    public char getSexo(){
+    public char getSexo() {
         return this._sexo;
     }
 
-    public int getAge(){
+    public int getAge() {
         return this._age;
     }
 

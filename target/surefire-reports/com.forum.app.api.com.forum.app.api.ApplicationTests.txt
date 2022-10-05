@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.forum.app.api.com.forum.app.api.ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! - in com.forum.app.api.com.forum.app.api.ApplicationTests
-com.forum.app.api.com.forum.app.api.ApplicationTests  Time elapsed: 0.007 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.08 s <<< FAILURE! - in com.forum.app.api.com.forum.app.api.ApplicationTests
+com.forum.app.api.com.forum.app.api.ApplicationTests  Time elapsed: 0.077 s  <<< ERROR!
 org.junit.platform.commons.JUnitException: @BeforeAll method 'public void com.forum.app.api.com.forum.app.api.ApplicationTests.initialize()' must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS).
 
