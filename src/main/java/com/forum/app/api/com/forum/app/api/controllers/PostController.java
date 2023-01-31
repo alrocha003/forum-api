@@ -6,6 +6,7 @@ import com.forum.app.api.com.forum.app.api.repository.PostRepository;
 import com.forum.app.api.com.forum.app.api.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.json.JsonParseException;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,8 +27,18 @@ public class PostController {
         return _repository.findAll();
     }
 
-    @GetMapping("?id={id}")
-    public ResponseEntity<Post> GetPostsById(@RequestParam String id) throws JsonProcessingException {
+    @GetMapping("/{id}")
+    public ResponseEntity<Post> GetPostsById(@PathVariable String id) throws JsonProcessingException {
+        Optional<Post> returned = _repository.findAll().stream().filter((p) -> p.getId().equals(id)).findAny();
+        if (returned.stream().count() > 0)
+            return new ResponseEntity<Post>(returned.get(), HttpStatus.OK);
+
+        return new ResponseEntity<Post>((Post) null, HttpStatus.NO_CONTENT);
+    }
+
+    @GetMapping("/query")
+    public ResponseEntity<Post> GetPostsByIdQueryParameter(@RequestParam(value = "id",
+            defaultValue = "0") String id) throws JsonProcessingException {
         Optional<Post> returned = _repository.findAll().stream().filter((p) -> p.getId().equals(id)).findAny();
         if (returned.stream().count() > 0)
             return new ResponseEntity<Post>(returned.get(), HttpStatus.OK);

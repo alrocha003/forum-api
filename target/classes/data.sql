@@ -25,6 +25,5 @@ insert into post values ('a311c01-ee49f-4e14-3894-b1d3c30c97a4', 'Canal Barbôni
 insert into post values ('9048276-ab6b-441b-951a-a4ed7f4f9b62', 'Projeto Lombok', 'ou can annotate any field with @Getter and/or @Setter, to let lombok generate the default getter/setter automatically.', '2022-09-25', 1);
 insert into post values ('47859374-7845-4c63-b5bb-0c4816fdddb9', '#2 Projeto Lombok', 'teste', '2022-09-27', 1);
 
-
 insert into tb_user values ('7c7c838hd-6858-40cc-9fce-88943kshdjc0', 'Alex Rocha', 'alrocha003@gmail.com', 'M', 31);
 insert into tb_user values ('a311c01-ejd84-4e14-9940-jihfdu83hkdj4', 'Tais Tavares Virissimo Rocha?', 'taverissimo@gmail.com','F', 28);
