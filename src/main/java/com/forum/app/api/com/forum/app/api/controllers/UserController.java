@@ -26,9 +26,8 @@ public class UserController {
   private UserRepository _repository;
 
   @GetMapping
-  public ResponseEntity<List<User>> getUserById(
-    @RequestParam(required = false) Optional<String> id
-  ) {
+  public ResponseEntity<List<User>> getUserById(@RequestParam(required = false) Optional<String> id)
+  {
     List<User> user = id.isPresent()
       ? _repository.findById(id.get()).stream().toList()
       : _repository.findAll();
